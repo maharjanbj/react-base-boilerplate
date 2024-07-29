@@ -1,0 +1,129 @@
+/*!
+ * Copyright (c) 2023 Groupado.
+ * All rights reserved.
+ * Redistribution and use in source and binary forms, with or without modification, are not permitted.
+ */
+
+.App {
+    text-align: center;
+}
+
+.App-logo {
+    height: 40vmin;
+    pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
+}
+
+body {
+    font-size: 14px !important;
+    @media (min-width: 1360px) {
+        font-size: 14px !important;
+    }
+    @media (min-width: 1540px) {
+        font-size: 16px !important;
+    }
+    @media (min-width: 1920px) {
+        font-size: 24px;
+    }
+}
+
+.App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.App-link {
+    color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.two-line {
+    overflow: hidden;
+    max-height: 3rem;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* number of lines to show */
+    -webkit-box-orient: vertical;
+}
+
+.two-line-fixed-height {
+    overflow: hidden;
+    height: 3rem;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* number of lines to show */
+    -webkit-box-orient: vertical;
+}
+
+::-webkit-scrollbar {
+    height: 8px;
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #5d5d5d;
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #e3e3e3;
+    border-radius: 8px;
+}
+
+.header-notification-bell .mantine-Menu-dropdown {
+    width: 300px !important;
+}
+
+.side-nav {
+    .mantine-Accordion-label {
+        padding-top: 4px !important;
+        padding-bottom: 4px !important;
+    }
+}
+
+//
+.mantine-Select-dropdown {
+    z-index: 9000 !important;
+}
+
+.mantine-InputWrapper-label {
+    font-weight: bold;
+    font-size: 0.75rem;
+    color: rgb(3 23 76 / var(--tw-text-opacity));
+}
+
+.mantine-Grid-inner {
+    max-width: 100% !important;
+    margin: 0 !important;
+}
+
+.w-full {
+    width: 100% !important;
+}
+
+.mantine-Tooltip-tooltip {
+    z-index: 9996 !important;
+}
+
+.mantine-Notifications-root {
+    z-index: 9999 !important;
+}
